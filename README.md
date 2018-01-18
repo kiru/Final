@@ -27,7 +27,7 @@ Professor Oak has dumped the memory of one Pokedex device, resulting in the data
 
 ### pokemon.csv
 
-Each row represents the features of one Pokémon
+In this file, each row represents the features of one Pokémon.
 
 * pid: Numeric - ID of the Pokémon
 * HP: Numeric - Health points
@@ -44,7 +44,7 @@ Please note that a Pokémon can have either one or two classes. If a Pokémon ha
 
 ### combats.csv
 
-Each row represents the outcome of one battle.
+In this file, each row represents the outcome of one battle between two Pokémon.
 
 * First_pokemon: Numeric - ID (match with pid)
 * Second_pokemon: Numeric - ID (match with pid)
