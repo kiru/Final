@@ -50,7 +50,7 @@ In this file, each row represents the outcome of one battle between two Pokémon
 * Second_pokemon: Numeric - ID (match with pid)
 * Winner: Numeric - ID of the winner
 
-## Question 1: Exploring the data
+## Question 1: Exploring the data - 30 points
 In this part, you will explore the data to address the curiosities of the demanding Professor Oak.
 
 1. (6 points) Explore the data and report some descriptive statistics (e.g., use df.describe(), report the number of classes, summarize the attack and defense distributions, etc.). This will be useful later in your analysis.
@@ -65,7 +65,7 @@ In this part, you will explore the data to address the curiosities of the demand
 4. (10 points) Professor Oak reveals to you that he has built a backdoor into every Pokedex in the world and that he is secretly dumping the memory of all devices to his servers. He expects to have the records of 1 billion combats soon, and one machine won’t be enough to handle all this data, so he wants you to use Spark. Your task: Solve problem 2iv above (“list the names of the 10 Pokémon with the largest number of victories”) with a Spark implementation in Python. The output should be a Python list with 10 names sorted in descending order of number of victories.
    Note: You don’t need to run the Spark code -- just list it! You should assume that you have two DataFrames (already loaded) called `pokemon` and `combats`, with the same schema as the small CSV files you’ve been working with above.
 
-## Question 2: Prediction
+## Question 2: Prediction - 40 points
 Now that you know what your data looks like, you are ready to implement the prediction model for the Pokedex 2.0. The model should take as input the features of two Pokémon and generate a binary value to predict who will win.
 
 1. (3 points) Generate the feature vectors and the labels to train your model.
@@ -76,7 +76,7 @@ Now that you know what your data looks like, you are ready to implement the pred
 6. (7 points) Implement your solution to the problem you’ve identified in the previous subquestion (5), and show and describe your results.
 7. (5 points) Finally, Professor Oak wants to know what the most predictive features are. Plot feature importance as a bar plot representing the 10 most predictive variables.
 
-## Question 3: Ranking
+## Question 3: Ranking - 30 points
 Something the new Pokedex is missing is a smart way of ranking the Pokémon. As the dataset Professor Oak gave you contains the outcome of a large number of battles, the idea is to use this data to come up with a way of sorting the Pokémon from strongest to weakest.
 1. (5 points) Compute the winning ratio (number of wins divided by number of battles) for all Pokémon. Show the 10 Pokémon with the highest ratio and describe what what they have in common with respect to their features. Discuss your results about feature importance from question 2.7 (regarding feature importance) in this context.
 Pokémon tournaments can be represented as a so-called _dominance graph_. The dominance graph is a directed graph in which each Pokémon is represented by one vertex, and directed edges point from stronger to weaker Pokémons: in particular, if Pokémon _i_ has won a strictly larger number of times against Pokémon _j_ than _j_ has won against _i_ (that is, if _i_ dominates _j_), there is a directed edge pointing from node _i_ to node _j_. The dominance graph can be represented as an adjacency matrix _G_ where entry _G_<sub>_ij_</sub> is 1 if there is an edge pointing from _i_ to _j_, and 0 otherwise.
