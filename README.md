@@ -25,7 +25,7 @@ Pokémon are small creatures that fight in competitions. All Pokémon have diffe
 ## Dataset description
 Professor Oak has dumped the memory of one Pokedex device, resulting in the dataset you’ll work with in this exam.
 
-### pokemon.csv
+### [pokemon.csv](pokemon.csv)
 
 Each row represents the features of one Pokémon
 
@@ -42,7 +42,7 @@ Each row represents the features of one Pokémon
 
 Please note that a Pokémon can have either one or two classes. If a Pokémon has two classes, they are both considered to have the same importance.
 
-### combats.csv
+### [combats.csv](combats.csv)
 
 Each row represents the outcome of one battle.
 
