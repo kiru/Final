@@ -59,10 +59,10 @@ In this part, you will explore the data to address the curiosities of the demand
    2. list the names of the 3 Pokémon with highest attack-over-defense ratio;
    3. list the names of the 3 Pokémon with lowest attack-over-defense ratio;
    4. list the names of the 10 Pokémon with the largest number of victories.
-3. Professor Oak suspects that Pokémon in the _Grass_ class have a stronger regular attack than those in the _Rock_ class. Check if he is right and convince him of your conclusion with statistical arguments.
+3. Professor Oak suspects that Pokémon in the _grass_ class have a stronger regular attack than those in the _rock_ class. Check if he is right and convince him of your conclusion with statistical arguments.
    Note: If there are Pokémon that are in both classes, discard them.
    Note: You may assume that the distribution of the regular attack feature is normal for all Pokémon classes.
-4. Professor Oak reveals to you that he has built a backdoor into every Pokedex in the world and that he is secretly dumping the memory of all devices to his servers. He expects to have the records of 1 billion combats soon, and one machine won’t be enough to handle all this data, so he wants you to use Spark. Your task: Solve problem 2d above (“list the names of the 10 Pokémon with the largest number of victories”) with a Spark implementation in Python. The output should be a Python list with 10 names sorted in descending order of number of victories.
+4. Professor Oak reveals to you that he has built a backdoor into every Pokedex in the world and that he is secretly dumping the memory of all devices to his servers. He expects to have the records of 1 billion combats soon, and one machine won’t be enough to handle all this data, so he wants you to use Spark. Your task: Solve problem 2iv above (“list the names of the 10 Pokémon with the largest number of victories”) with a Spark implementation in Python. The output should be a Python list with 10 names sorted in descending order of number of victories.
    Note: You don’t need to run the Spark code -- just list it! You should assume that you have two DataFrames (already loaded) called `pokemon` and `combats`, with the same schema as the small CSV files you’ve been working with above.
 
 ## Question 2: Prediction
