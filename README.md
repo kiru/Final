@@ -1,4 +1,4 @@
-# ADA Final - Rules
+# ADA final exam
 
 ## Deadline
 _Friday, January 19, 2018, at 19:15 CET_
@@ -12,7 +12,7 @@ _Friday, January 19, 2018, at 19:15 CET_
 * Remember, this is not a homework assignment -- no teamwork allowed!
 
 ## Submission
-* Make sure you upload your iPython Notebook with [this form](https://goo.gl/forms/JKPX74ZH707sB7Up1) at the end of the exam, with all the cells already evaluated (except for question 1.4).
+* Make sure you upload your iPython Notebook with [this form](https://goo.gl/forms/JKPX74ZH707sB7Up1) at the end of the exam, with all the cells already evaluated (except for the Spark-related question 1.4).
 * Complete all the fields in the form, and name your file following the format "NameSurname_sciper.ipynb". The form will be open to submissions until 19:20 (strict deadline). Late submissions will not be accepted.
 
 # Design the Pokedex 2.0
@@ -79,9 +79,9 @@ Now that you know what your data looks like, you are ready to implement the pred
 ## Question 3: Ranking
 Something the new Pokedex is missing is a smart way of ranking the Pokémon. As the dataset Professor Oak gave you contains the outcome of a large number of battles, the idea is to use this data to come up with a way of sorting the Pokémon from strongest to weakest.
 1. Compute the winning ratio (number of wins divided by number of battles) for all Pokémon. Show the 10 Pokémon with the highest ratio and describe what what they have in common with respect to their features. Discuss your results about feature importance from question 2.7 (regarding feature importance) in this context.
-Pokémon tournaments can be represented as a so-called _dominance graph_. The dominance graph is a directed graph in which each Pokémon is represented by one vertex, and directed edges point from stronger to weaker Pokémons: in particular, if Pokémon _i_ has won a strictly larger number of times against Pokémon _j_ than _j_ has won against _i_ (that is, if _i_ dominates _j_), there is a directed edge pointing from node _i_ to node _j_. The dominance graph can be represented as an adjacency matrix G where entry G<sub>ij</sub> is 1 if there is an edge pointing from _i_ to _j_, and 0 otherwise.
-2. A simple method for identifying the strongest Pokémon using this graph is to compute the matrix A = G + G<sup>2</sup>. Consider a given row of A; summing up all elements of that row results in a dominance score for the respective Pokémon. Explain what this score represents and why it may be interpreted as capturing the dominance of a Pokémon.
-3. Compute A and extract the 10 Pokémon with the highest dominance score.
+Pokémon tournaments can be represented as a so-called _dominance graph_. The dominance graph is a directed graph in which each Pokémon is represented by one vertex, and directed edges point from stronger to weaker Pokémons: in particular, if Pokémon _i_ has won a strictly larger number of times against Pokémon _j_ than _j_ has won against _i_ (that is, if _i_ dominates _j_), there is a directed edge pointing from node _i_ to node _j_. The dominance graph can be represented as an adjacency matrix _G_ where entry _G_<sub>_ij_</sub> is 1 if there is an edge pointing from _i_ to _j_, and 0 otherwise.
+2. A simple method for identifying the strongest Pokémon using this graph is to compute the matrix _A_ = _G_ + _G_<sup>2</sup>. Consider a given row of _A_; summing up all elements of that row results in a dominance score for the respective Pokémon. Explain what this score represents and why it may be interpreted as capturing the dominance of a Pokémon.
+3. Compute _A_ and extract the 10 Pokémon with the highest dominance score.
 4. Compare the ranking by dominance scores with the ranking by winning ratio (cf. subquestion 1 above). What do you observe? How do you explain the differences (if any)?
 5. Professor Oak is really keen on featuring a solid ranking mechanism in the new Pokedex, so you need to make a decision: Which scoring method is better, that based on winning ratio or that based on dominance scores? Support your opinion with explanations and examples.
 
