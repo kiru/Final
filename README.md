@@ -9,10 +9,12 @@ _Friday, January 19, 2018, at 19:15 CET_
 * Don't forget to add a textual description of your thought process, the assumptions you made, and your results!
 * Please write all your comments in English, and use meaningful variable names in your code.
 * As we have seen during the semester, data science is all about multiple iterations on the same dataset. Do not obsess over small details in the beginning, and try to complete as many tasks as possible during the first 2 hours. Then, go back to the obtained results, write meaningful comments, and debug your code if you have found any glaring mistake.
+* You cannot leave the room in the first and last 10 minutes.
+* You can use all the online resources you want except for communication tools (emails, web chats, forums, phone, etc.).
 * Remember, this is not a homework assignment -- no teamwork allowed!
 
 ## Submission
-* Make sure you upload your iPython Notebook with [this form](https://goo.gl/forms/JKPX74ZH707sB7Up1) at the end of the exam, with all the cells already evaluated (except for the Spark-related question 1.4).
+* Make sure you upload your iPython Notebook (1 file) with [this form](https://goo.gl/forms/JKPX74ZH707sB7Up1) at the end of the exam, with all the cells already evaluated (except for the Spark-related question 1.4).
 * Complete all the fields in the form, and name your file following the format "NameSurname_sciper.ipynb". The form will be open to submissions until 19:20 (strict deadline). Late submissions will not be accepted.
 
 # Design the Pokedex 2.0
