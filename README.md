@@ -9,7 +9,7 @@ _Friday, January 19, 2018, at 19:15 CET_
 * Don't forget to add a textual description of your thought process, the assumptions you made, and your results!
 * Please write all your comments in English, and use meaningful variable names in your code.
 * As we have seen during the semester, data science is all about multiple iterations on the same dataset. Do not obsess over small details in the beginning, and try to complete as many tasks as possible during the first 2 hours. Then, go back to the obtained results, write meaningful comments, and debug your code if you have found any glaring mistake.
-* You cannot leave the room in the first and last 10 minutes.
+* You cannot leave the room in the first and last 15 minutes.
 * You can use all the online resources you want except for communication tools (emails, web chats, forums, phone, etc.). We will monitor the network for unusual activities.
 * Remember, this is not a homework assignment -- no teamwork allowed!
 
